@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    @foreach (var list in ViewBag.Name)
+    {
+        <p>@list.Name</p>
+    }
+
+
+</div>
+<p>@Html.ActionLink("Создать новый", "Create")</p>

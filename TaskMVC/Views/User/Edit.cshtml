@@ -1,0 +1,16 @@
+﻿@model TaskMVC.Models.User
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+   
+    <div>
+        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+   
+    <input type="submit" value="Create" class="btn btn-default" />
+}
+
